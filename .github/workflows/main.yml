@@ -1,4 +1,4 @@
-
+```yaml
 name: Python Install Demo
 
 on:
@@ -22,10 +22,7 @@ jobs:
 
       - name: Run Python File
         run: python app.py
-
-
-
-
+```
 
 
 
