@@ -1,5 +1,5 @@
 name: Python Install Demo
-    ?
+
 on:
   workflow_dispatch:
 
