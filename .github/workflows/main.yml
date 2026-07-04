@@ -1,3 +1,4 @@
+
 name: Python Install Demo
 
 on:
@@ -9,14 +10,47 @@ jobs:
 
     steps:
       - name: Checkout Repository
-        uses: action/checkout@v4
-      - name: Install Python 3.11
-        uses: action/setup-python@v5
-        with:
-          python-version:'3.11'
+        uses: actions/checkout@v4
 
-      - name: checkout python version
+      - name: Install Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Check Python Version
         run: python --version
 
-      -  name: Run python File
-         run: python app.py
+      - name: Run Python File
+        run: python app.py
+
+
+
+
+
+
+
+
+
+
+# name: Python Install Demo
+
+# on:
+#   workflow_dispatch:
+
+# jobs:
+#   python-demo:
+#     runs-on: ubuntu-latest
+
+#     steps:
+#       - name: Checkout Repository
+#         uses: action/checkout@v4
+#       - name: Install Python 3.11
+#         uses: action/setup-python@v5
+#         with:
+#           python-version:'3.11'
+
+#       - name: checkout python version
+#         run: python --version
+
+#       -  name: Run python File
+#          run: python app.py
